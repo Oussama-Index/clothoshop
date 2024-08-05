@@ -1,0 +1,12 @@
+# Allow all bots to access the main site
+User-agent: *
+Disallow:
+
+# Disallow all bots from accessing the functions and admin folders
+User-agent: *
+Disallow: /functions/
+Disallow: /admin/
+Disallow: /uploads/
+
+# Sitemap location
+Sitemap: https://www.example.com/sitemap.xml

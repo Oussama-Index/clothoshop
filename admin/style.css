@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* COMPONENTS */
+
+h1.main-title{
+    font-size: 40px;
+    font-family: monospace;
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+    width: fit-content;
+    margin: 50px auto;
+}
+@media only screen and (max-width: 768px) {
+    h1.main-title{
+        font-size: 34px;
+    }
+}
+.btn{
+    padding: 10px 15px;
+    font-family: monospace;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+    .btn{
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+
+
+/* NAV */
+ul{
+    display: flex;
+}
+ul li{
+    font-size: 20px;
+    background-color: darkslategrey;
+    font-family: monospace;
+    width: 20%;
+    list-style: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ul li:hover{
+    background-color: chocolate;
+}
+ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+    ul li{
+        font-size: 14px;
+    }
+}
+
+/* MANAGE STORES */
+
+.con.manage-stores{
+    width: 80%;
+    margin: 50px auto;
+}
+.con.manage-stores .head,
+.con.manage-stores .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 1px solid  rgb(9, 58, 89);
+}
+.con.manage-stores .head div{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 1px solid rgb(9, 58, 89);
+    background-color: lightskyblue;
+    padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+    .con.manage-stores .head div{
+        font-size: 16px;
+    }
+}
+.con.manage-stores .row div{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 1px solid rgb(88, 84, 46);
+    background-color: rgb(185, 180, 142);
+    padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+    .con.manage-stores .row div{
+        font-size: 16px;
+    }
+}
+
+.con.manage-stores .row div:last-child a{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 12px;
+}
+@media only screen and (max-width: 768px) {
+    .con.manage-stores .row div:last-child a{
+        font-size: 16px;
+        margin-left: 4px;
+        padding: 5px 8px;
+    }
+}
+.con.manage-stores .row div:last-child a:nth-child(2){
+    background-color: red;
+    color: white;
+    
+}
+
+/* MANAGE PRODUCTS */
+
+
+.con.manage-products{
+    width: 80%;
+    margin: 50px auto;
+}
+.con.manage-products .head,
+.con.manage-products .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid  rgb(9, 58, 89);
+}
+.con.manage-products .head div{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 1px solid rgb(9, 58, 89);
+    background-color: lightskyblue;
+    padding: 20px 0;
+}
+.con.manage-products .row{
+
+}
+.con.manage-products .row div{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    border-left: 1px solid rgb(88, 84, 46);
+    background-color: rgb(185, 180, 142);
+    padding: 20px 0;
+}
+.con.manage-products .row div:last-child a{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 12px;
+}
+.con.manage-products .row div:last-child a:last-child{
+    background-color: red;
+    color: white;
+    
+}
+
+
+/* ADD PRODUCT PAGE */
+
+
+form{
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid rgb(184, 232, 238);
+    border-radius: 6px;
+    background-color: lavender;
+    font-family: monospace;
+    text-align: center;
+}
+form .form-group{
+    margin: 30px 0;
+}
+form .form-group label{
+    margin-right: 30px;
+    font-size: 20px;
+    
+}
+form .form-group input{
+    border: 1px solid rgb(175, 224, 224);
+    background-color: rgb(250, 198, 224);
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-family: monospace;
+    
+}
+form .form-group input:focus{
+    outline: none;
+}
+form .form-group select{
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 4px;
+}
+form .form-group select option{
+    font-weight: bold;
+}
+form input[type="submit"]{
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 12px 18px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+form input[type="submit"]:hover{
+    background-color: goldenrod;
+}
